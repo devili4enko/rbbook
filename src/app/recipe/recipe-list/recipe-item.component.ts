@@ -7,6 +7,6 @@ import { Recipe } from '../recipe'
   templateUrl: `./recipe-item.component.html`
 })
 export class RecipeItemComponent {
-  @ Input() recipe: Recipe;
-  recipeId: number;
+  @Input() recipe: Recipe;
+  @Input() recipeId: number;
 }

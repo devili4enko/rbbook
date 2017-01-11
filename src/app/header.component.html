@@ -1,13 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-      <a class="navbar-brand" href="#">Recipe book</a>
+      <a class="navbar-brand" [routerLink]="['']">Recipe book</a>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Recipe <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Shop</a></li>
+        <li routerLinkActive="active"><a [routerLink]="['recipes']">Recipe <span class="sr-only">(current)</span></a></li>
+        <li routerLinkActive="active"><a [routerLink]="['shopping-list']">Shop</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
